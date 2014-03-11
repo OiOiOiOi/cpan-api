@@ -1,6 +1,12 @@
 package MetaCPAN::Server::Controller::Scroll;
+
+use strict;
+use warnings;
+
 use Moose;
+
 BEGIN { extends 'MetaCPAN::Server::Controller' }
+
 with 'MetaCPAN::Server::Role::JSONP';
 
 sub index : Path('/_search/scroll') {

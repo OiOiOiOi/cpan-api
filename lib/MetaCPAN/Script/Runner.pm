@@ -1,11 +1,13 @@
 package MetaCPAN::Script::Runner;
+
 use strict;
 use warnings;
+
 use Class::MOP;
 use Config::JFDI;
 use FindBin;
-use IO::Interactive qw(is_interactive);
 use Hash::Merge::Simple qw(merge);
+use IO::Interactive qw(is_interactive);
 use Module::Pluggable search_path => ['MetaCPAN::Script'];
 
 sub run {
