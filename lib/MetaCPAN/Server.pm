@@ -20,7 +20,6 @@ __PACKAGE__->apply_request_class_roles(
         )
 );
 __PACKAGE__->config(
-    encoding           => 'UTF-8',
     default_view       => 'JSON',
     'OAuth2::Provider' => {
         login => '/login/index',
